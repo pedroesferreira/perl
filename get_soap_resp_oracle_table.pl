@@ -13,6 +13,12 @@ use CGI;
 use DBI;
 use MIME::Lite;
 
+#example on how to send a HTTP POST into an endpoint
+#gets the Request body previously saved on an Oracle table
+#prints the response to be used on PLSQL through UTL_HTTP.read_text
+#https://url.com/path_to_perl/get_soap_resp_oracle_table.pl?table_id=321
+#check "get_perl_response.sql" to check integration
+
 my $ora_bd = "dbi:Oracle:bd";
 my $ora_user = "bd_username";
 my $ora_pwd = "bd_password";

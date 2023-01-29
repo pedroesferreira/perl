@@ -9,6 +9,10 @@ $ENV{MDB_ICONV}='ISO-8859-15';
 use strict;
 use DBI;
 
+#example on how to extract values from tables in a Microsoft Access DB file and insert in Oracle tables
+#for correct/simplified operations, tables in the MDB file and in Oracle DB have to be named the same 
+#subroutine "updateIntChar" is an example on how to extract and insert the most common integer and varchar values
+
 my $PATH_FILES = "/path/to/access_bd_file";
 my $FILE = "$PATH_FILES/data.mdb";
 my $DBNAME = 'dbi:Oracle:bd';
